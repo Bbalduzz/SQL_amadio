@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Armadio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row align-items-start">
+          <div class="col tit">
+            FELPE
+          </div>
+          <div class="col tit">
+            T-SHIRT
+          </div>
+          <div class="col tit">
+            PANTALONI
+          </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-start">
+          <div id="felpe" class="col list">
+            <!-- felpe -->
+            <button onclick="felpe()">aggiungi</button>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+          </div>
+          <!-- tshirt -->
+          <div id="tshirt" class="col list">
+            <button onclick="tshirt()">aggiungi</button>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+          </div>
+          <!-- pantaloni -->
+          <div id="pant" class="col list">
+            <button onclick="pant()">aggiungi</button>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+            <div class="col it">
+                <input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script>
+function felpe() {
+var card = document.createElement("div");
+card.classList.add('col');
+card.classList.add('it');
+card.innerHTML = '<input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />';
+
+var element = document.getElementById("felpe")
+element.appendChild(card);
+}
+
+function tshirt() {
+var card = document.createElement("div");
+card.classList.add('col');
+card.classList.add('it');
+card.innerHTML = '<input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />';
+
+var element = document.getElementById("tshirt")
+element.appendChild(card);
+}
+
+function pant() {
+var card = document.createElement("div");
+card.classList.add('col');
+card.classList.add('it');
+card.innerHTML = '<input type="input" class="form__field" placeholder="" name="name" id="name" onclick="clickHandler" required />';
+
+var element = document.getElementById("pant")
+element.appendChild(card);
+}
+
+var body = document.getElementsByTagName("body");
+var bodycontent = body[0];
+
+</script>
+</html>
